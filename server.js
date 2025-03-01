@@ -21,8 +21,8 @@ const io = socketio(server, {
   },
 });
 //middlewares
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 //connect to db
 mongoose
   .connect(process.env.MONGO_URL)
